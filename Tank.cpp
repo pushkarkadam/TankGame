@@ -2,26 +2,24 @@
 #include <string>
 using namespace std;
 
-struct Tank {
-	static int armour;
-	static int shells;
-	string name;
+class Tank{
+public:
+	void setTank(int armour, int shells, string name);
 
+	int getArmour();
+	// Returns the armour of the tank
+
+	int getShells();
+	// Returns the shell of the tank
+	int getName();
+	// Returns the name of the tank
+
+private:
+	int armour;
+	int shells;
+	string name;
 };
 
-void attack(Tank& tank);
-
 int main(){
-	
-	// Create 3 tank objects
-	Tank tank1;
-	Tank tank2;
-	Tank tank3;
-
-	attack(tank1);
-}
-
-void attack(Tank& theTank){
-	cout << "who to attack?\n> ";
-	cin >> theTank.name;
+	//cout << "This is working!";
 }
