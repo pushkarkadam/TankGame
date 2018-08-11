@@ -32,6 +32,7 @@ int main(){
 
 	Tank tank1;
 	tank1.setTank(4,4,playerName);
+	cout<<"Tank armour: " + to_string(tank1.getArmour());
 
 	Tank tank2;
 	tank2.setTank(4,4,"Computer 1");
@@ -44,4 +45,8 @@ void Tank::setTank(int armour, int shells, string name){
 	tankArmour = armour;
 	tankShells = shells;
 	tankName = name;
+}
+
+int Tank::getArmour(){
+	return tankArmour;
 }
