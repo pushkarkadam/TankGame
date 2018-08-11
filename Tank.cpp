@@ -20,11 +20,17 @@ public:
 
 
 private:
-	int armour;
-	int shells;
-	string name;
+	int tankArmour;
+	int tankShells;
+	string tankName;
 };
 
 int main(){
-	//cout << "This is working!";
+	
+}
+
+void Tank::setTank(int armour, int shells, string name){
+	tankArmour = armour;
+	tankShells = shells;
+	tankName = name;
 }
