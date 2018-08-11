@@ -13,6 +13,11 @@ public:
 	// Returns the shell of the tank
 	int getName();
 	// Returns the name of the tank
+	void setArmout(int armour);
+
+	void setShells(int shells);
+
+
 
 private:
 	int armour;
