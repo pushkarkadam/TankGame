@@ -32,6 +32,12 @@ int main(){
 
 	Tank tank1;
 	tank1.setTank(4,4,playerName);
+
+	Tank tank2;
+	tank2.setTank(4,4,"Computer 1");
+
+	Tank tank3;
+	tank3.setTank(4,4,"Computer 2");
 }
 
 void Tank::setTank(int armour, int shells, string name){
