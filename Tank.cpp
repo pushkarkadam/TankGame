@@ -34,7 +34,6 @@ int main(){
 
 	Tank tank1;
 	tank1.setTank(4,4,playerName);
-	cout<<"Tank armour: " + to_string(tank1.getArmour());
 
 	cout<<tank1.getTankInfo();
 
