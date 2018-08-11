@@ -11,8 +11,10 @@ public:
 
 	int getShells();
 	// Returns the shell of the tank
-	int getName();
+	string getName();
 	// Returns the name of the tank
+	string getTankInfo();
+	
 	void setArmout(int armour);
 
 	void setShells(int shells);
@@ -34,6 +36,8 @@ int main(){
 	tank1.setTank(4,4,playerName);
 	cout<<"Tank armour: " + to_string(tank1.getArmour());
 
+	cout<<tank1.getTankInfo();
+
 	Tank tank2;
 	tank2.setTank(4,4,"Computer 1");
 
@@ -49,4 +53,22 @@ void Tank::setTank(int armour, int shells, string name){
 
 int Tank::getArmour(){
 	return tankArmour;
+}
+
+string Tank::getName(){
+	return tankName;
+}
+
+int Tank::getShells(){
+	return tankShells;
+}
+
+string Tank::getTankInfo(){
+	string info = "\n--------------------------------";
+	info += "\nTank: " + tankName;
+	info += "\nArmour: " + to_string(tankArmour);
+	info += "\nShells: " + to_string(tankShells);
+	info += "\n--------------------------------\n";
+
+	return info;
 }
