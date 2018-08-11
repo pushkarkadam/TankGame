@@ -26,7 +26,12 @@ private:
 };
 
 int main(){
-	
+	string playerName;
+	cout<<"Enter player name: ";
+	cin >> playerName;
+
+	Tank tank1;
+	tank1.setTank(4,4,playerName);
 }
 
 void Tank::setTank(int armour, int shells, string name){
